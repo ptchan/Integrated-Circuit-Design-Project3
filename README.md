@@ -8,11 +8,9 @@ Due 2023/12/14, 9:00, Verilog code and report upload to NTUCool, no hardcopy Pla
 
 Design a circuit with reset that computes the **approximation of the sigmoid function**. There are two input signals for the circuit, i.e., i\_x with 8 bits, and a 1-bit i\_in\_valid. The i\_x is a fixed-point format with a 1-bit sign, 2-bit integer, and 5-bit fraction.  The  circuit  contains  two  output  signals,  i.e.,  up  to  16-bit  o\_y  for  the approximation output value, and a 1-bit o\_out\_valid. The o\_y is a fixed-point format with 1-bit integer and up to 15-bit fraction, and you don't need to use all 15 bits for your design's output. Note that **the input signal is signed,** and **the output signal is unsigned.** The relation between the input and the output signals is 
 
-1
 
-Y ≅ sigmoid(x) =
 
-1 + e−X
+Y ≅ sigmoid(x) = 1/(1 + e^-x)
 
 `     `You are encouraged to use piecewise-linear approximation to design your circuit. For example, Figure 1 uses three segments to approximate the real function, while Figure 2 uses 5 segments. Figure 2 is more accurate than Figure 1, but its cost is using more transistors in the circuit because it needs to calculate more slopes. This is a tradeoff, so it is important to think about what your approximation function is before designing the circuit. Note that this homework only considers the range of [-4, 4). 
 
