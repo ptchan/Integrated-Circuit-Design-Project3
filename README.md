@@ -2,8 +2,6 @@
 
 ***Homework # 4*** 
 
-Due 2023/12/14, 9:00, Verilog code and report upload to NTUCool, no hardcopy Plagiarism is not allowed. 10% penalty for each day of delay. 
-
 **Problem Specification** 
 
 Design a circuit with reset that computes the **approximation of the sigmoid function**. There are two input signals for the circuit, i.e., i\_x with 8 bits, and a 1-bit i\_in\_valid. The i\_x is a fixed-point format with a 1-bit sign, 2-bit integer, and 5-bit fraction.  The  circuit  contains  two  output  signals,  i.e.,  up  to  16-bit  o\_y  for  the approximation output value, and a 1-bit o\_out\_valid. The o\_y is a fixed-point format with 1-bit integer and up to 15-bit fraction, and you don't need to use all 15 bits for your design's output. Note that **the input signal is signed,** and **the output signal is unsigned.** The relation between the input and the output signals is 
@@ -186,12 +184,3 @@ You will also see the summary:
 2. ***Simulation Command*** 
 - vcs tb.v sigmoid.v lib.v –full64 –R –debug\_access+all +v2k 
 - vcs tb.v sigmoid.v lib.v –full64 –R –debug\_access+all +v2k +define+DEBUG 
-
-If you have any questions or problems with this homework, feel free to contact TA. TA:  陳丕全  Email: r11943013@ntu.edu.tw, EE2-329 
-
-HW4 Office hours: 12/12 Tue 14:00~16:00 @EE2-329 
-
-`                 `12/13 Wed 14:00~16:00 @EE2-329 
-
-If you are not available during office hours, you can email the TA to make an alternative appointment. 
-7
